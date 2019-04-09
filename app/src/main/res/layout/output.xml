@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/back"
+        android:background="@color/cyan"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:id="@+id/shadow"
+        android:layout_below="@+id/bar"
+        android:background="@drawable/shadowlight"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/output"
+        android:text="Output :-"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:layout_below="@+id/shadow" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/text"
+        android:textSize="30sp"
+        android:padding="16dp"
+        android:layout_below="@+id/output" />
+
+</RelativeLayout>

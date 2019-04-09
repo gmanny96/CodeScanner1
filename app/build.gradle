@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "codescanner.gurkirat.aarushi.codescanner1"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.rmtheis:tess-two:8.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.google.android.gms:play-services-vision:11.8.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.myhexaville:smart-image-picker:1.0'
+    implementation "com.daimajia.swipelayout:library:1.2.0@aar"
+    implementation "com.andkulikov:transitionseverywhere:1.7.8"
+    implementation files('libs/bsh-2.0b4.jar')
+}

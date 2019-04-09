@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/bar"
+        android:background="@color/cyan"
+        app:navigationIcon="@drawable/back"
+        app:title="Settings"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:id="@+id/shadow"
+        android:layout_below="@+id/bar"
+        android:background="@drawable/shadowlight"/>
+
+    <TextView
+        android:text="Instinct Output"
+        android:textSize="16sp"
+        android:layout_below="@+id/shadow"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:id="@+id/op" />
+
+    <Switch
+        android:id="@+id/swop"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/op"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"/>
+
+    <TextView
+        android:text="Save Photo"
+        android:textSize="16sp"
+        android:layout_below="@+id/op"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:id="@+id/sp" />
+
+    <Switch
+        android:id="@+id/swsp"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"/>
+
+</RelativeLayout>
